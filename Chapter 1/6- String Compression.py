@@ -21,4 +21,7 @@ def check(s):
             new_s+=s[i]
             stack = []
 
-    return new_s
+    if len(s)==new_s:
+        return s
+    else:
+        return new_s
