@@ -12,7 +12,7 @@ def check(s):
     count = 0
 
     for values in dic.values():
-        if values<2:
+        if values%2!=0:
             count+=1
 
     if count>1:
