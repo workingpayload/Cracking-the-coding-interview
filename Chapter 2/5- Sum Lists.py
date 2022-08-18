@@ -33,29 +33,15 @@ class ll:
         llstr += str(itr.val)
         print(llstr)
 
-
-
-    def iterator(self,node):
-        list = []
-
-        while(node):
-            list.append(node.val)
-            node = node.next
-
-        return list
-
-
-
-
     def sumlist(self,node1,node2):
-        list1 = self.iterator(node1)
-        list2 = self.iterator(node2)
         st1=""
         st2 = ""
-        for i in list1:
-            st1+=str(i)
-        for i in list2:
-            st2+=str(i)
+        while(node1):
+            st1+=str(node1.val)
+            node1 = node1.next
+        while(node2):
+            st2+=str(node2.val)
+            node2 = node2.next
         new_sum = int(st1[::-1]) + int(st2[::-1])
         list3 = []
         for i in str(new_sum):
