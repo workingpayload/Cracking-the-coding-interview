@@ -21,17 +21,6 @@ class ll:
         for data in data_values:
             self.insert_at_end(data)
 
-    def removeduplicates(self):
-        temp = self.head
-
-        while(self.head and self.head.next):
-            if self.head.val == self.head.next.val:
-                self.head.next = self.head.next.next
-            else:
-                self.head = self.head.next
-
-        return temp
-
     def print(self):
         if self.head == None:
             print("Linked List is empty")
