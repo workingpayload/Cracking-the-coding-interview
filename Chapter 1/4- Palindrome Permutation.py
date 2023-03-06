@@ -1,17 +1,17 @@
 def check(s):
     l = s.split()
     new_s = "".join(l)
-    dic = {}
+    dicti = {}
 
     for i in new_s:
-        if i in dic:
-            dic[i]+=1
+        if i in dicti:
+            dicti[i]+=1
         else:
-            dic[i]=1
+            dicti[i]=1
 
     count = 0
 
-    for values in dic.values():
+    for values in dicti.values():
         if values%2!=0:
             count+=1
 
